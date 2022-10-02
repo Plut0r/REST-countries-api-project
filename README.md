@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git repo url](https://your-solution-url.com)
-- Live Site URL: [netlify url](https://your-live-site-url.com)
+- Solution URL: [Git repo url](https://github.com/Plut0r/REST-countries-api-project)
+- Live Site URL: [netlify url](https://restcountries-plut0r.netlify.app/)
 
 ### Built with
 
