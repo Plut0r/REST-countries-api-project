@@ -4,6 +4,7 @@ import InfoDetail from "./InfoDetail";
 
 function Info() {
   const [countryInfo, setCountryInfo] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const location = useLocation();
   const name = location.pathname.replace(/[^a-zA-Z0-9 ]/, "");
@@ -16,12 +17,14 @@ function Info() {
       );
       const data = await response.json();
       setCountryInfo(data);
+      setLoading(false);
     };
     getCountryInfo();
   }, []);
 
   return (
     <div className="container mt-14">
+      {loading && <p className="text-2xl text-center font-semibold text-veryDarkBlue dark:text-white">Loading...</p>}
       {countryInfo.map((country) => (
         <InfoDetail
           key={country.name.common}
