@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+html.dark body {
+  background-color: hsl(207, 26%, 17%);
+}
+
+
